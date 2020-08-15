@@ -1,5 +1,9 @@
 import React from "react";
-import Course from "../components/course/Course";
+import Profile from "./profile/Profile";
 export default function App() {
-  return <Course />;
+  return (
+    <div>
+      <Profile />
+    </div>
+  );
 }

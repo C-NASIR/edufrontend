@@ -9,7 +9,10 @@ import Card from "../ui/Card";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "100%",
+    margin: "auto",
+  },
+  accordion: {
+    border: "1 solid",
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
@@ -33,6 +36,7 @@ export default function ControlledAccordions() {
   return (
     <div className={classes.root}>
       <Accordion
+        className={classes.accordion}
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
       >
@@ -47,7 +51,7 @@ export default function ControlledAccordions() {
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Card />
+          <Card name="Lesson One" />
         </AccordionDetails>
       </Accordion>
     </div>

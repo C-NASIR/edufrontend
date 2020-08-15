@@ -14,7 +14,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function UICard() {
+export default function UICard({ name }) {
   const classes = useStyles();
 
   return (
@@ -22,7 +22,7 @@ export default function UICard() {
       <CardActionArea onClick={() => console.log("clicked")}>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {name}
           </Typography>
         </CardContent>
       </CardActionArea>
